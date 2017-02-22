@@ -16,6 +16,27 @@ section {
   padding: 2rem;
 }
 
+.example-wrapper:before {
+  content: "[Put a message here explaining the current browser doesn't have CSS Grid, and if it did, we'd have a cool example here to be seen. Oh, your browser doesn't support Grid. Try this site in Firefox Nightly.]";
+}
+.example-wrapper > * {
+  display: none;
+}
+.example-wrapper {
+  padding: 2rem;
+  background: red;
+}
+@supports (display: grid) {  
+  .example-wrapper:before {
+    content:none;
+  }
+  .example-wrapper {
+    display: block;
+    padding: 0;
+    background: none;
+  }
+}
+
 .example1 {
   background: #000;
   color: #fff;
