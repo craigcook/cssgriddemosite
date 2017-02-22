@@ -1,3 +1,6 @@
+// General Page Layout
+// -----------------------------------------------------------------
+
 body {
   margin: 0;
 }
@@ -13,8 +16,13 @@ main {
 }
 
 section {
-  padding: 2rem;
+  padding: 2rem 4rem;
 }
+
+
+
+// Toggle to Show / Hide Examples & Note Based on Grid Support  
+// -----------------------------------------------------------------
 
 .example-wrapper:before {
   content: "[Put a message here explaining the current browser doesn't have CSS Grid, and if it did, we'd have a cool example here to be seen. Oh, your browser doesn't support Grid. Try this site in Firefox Nightly.]";
@@ -24,6 +32,7 @@ section {
 }
 .example-wrapper {
   padding: 2rem;
+  margin: 1rem 0 3rem;
   background: red;
 }
 @supports (display: grid) {  
@@ -32,23 +41,20 @@ section {
   }
   .example-wrapper {
     display: block;
-    padding: 0;
-    background: none;
+    padding: 2rem;
+    background: $old-paper;
+    box-shadow: $box-shadow;
   }
 }
 
+
+// Background Colors for Sections
+// -----------------------------------------------------------------
+
 .example1 {
-  background: #000;
-  color: #fff;
+  background: $mozilla-blue;
 }
 
 .resources {
   background: $mozilla-lime;
-}
-
-
-
-footer {
-  
-  
 }

@@ -22,25 +22,25 @@ h5,
 h6 {
   font-family: "Sanchez Slab W03";
   line-height: 1.3;
-  margin: 1em 0 0.375em;
   color: black; }
 
 h1 {
   font-size: 3rem;
   font-weight: 200;
-  margin-bottom: 1rem; }
+  margin: 1em 0 0.5em; }
 
 h2 {
   font-size: 2rem;
-  font-weight: 200; }
+  font-weight: 200;
+  margin: 0.75em 0; }
 
 h3 {
   font-size: 1.6rem;
   font-weight: 200;
-  margin-bottom: 0; }
+  margin: 1em 0 0; }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 200;
   background: black;
   color: white;
@@ -133,7 +133,7 @@ header {
   margin-top: 1rem; }
 
 section {
-  padding: 2rem; }
+  padding: 2rem 4rem; }
 
 .example-wrapper:before {
   content: "[Put a message here explaining the current browser doesn't have CSS Grid, and if it did, we'd have a cool example here to be seen. Oh, your browser doesn't support Grid. Try this site in Firefox Nightly.]"; }
@@ -143,6 +143,7 @@ section {
 
 .example-wrapper {
   padding: 2rem;
+  margin: 1rem 0 3rem;
   background: red; }
 
 @supports ((display: -ms-grid) or (display: grid)) {
@@ -150,12 +151,12 @@ section {
     content: none; }
   .example-wrapper {
     display: block;
-    padding: 0;
-    background: none; } }
+    padding: 2rem;
+    background: #f6f3ea;
+    box-shadow: 3px 2px 12px rgba(0, 0, 0, 0.4); } }
 
 .example1 {
-  background: #000;
-  color: #fff; }
+  background: #82D1F5; }
 
 .resources {
   background: #B6D806; }
@@ -197,12 +198,8 @@ section.resources ul a {
   display: grid;
   margin: 0;
   padding: 0;
-  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   grid-gap: 4px; }
-  .example1 ul li {
-    /* autoprefixer: off */
-    grid-column: span 2;
-    grid-row: span 2; }
 
 .example1 img {
   display: block;

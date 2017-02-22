@@ -13,9 +13,27 @@ $mozilla-neon-blue-light: lighten($mozilla-neon-blue, 40%); // I made this up
 $mozilla-neon-pink: #FA8CFF;
 $mozilla-neon-green: #ABFF10;
 
+// Other Colors.
+$old-paper: #f6f3ea;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+$primary-color: #555;
+$link-color: black;
+
+// Font Colors.
+$base-font-color: $dark-gray;
+$action-color: black;
+$accent-color: $mozilla-blue;
+
+
+
+// Some universal styles.
+$box-shadow: 3px 2px 12px rgba(0,0,0,0.4);
+
 // Fonts.
 $base-font-family: 'DIN Next W01', 'Helevetica Neue', Helvetica, sans-serif;
-$body-font-family: 'Calluna W01', Georgia, Serif;
+$body-font-family: 'Calluna W01', Georgia, serif;
 $heading-font-family: 'Sanchez Slab W03';   // This will be replaced with Zilla, once the web font files are available.
 $action-font-family: 'Sanchez Slab W03';    // This will be replaced with Zilla, once the web font files are available.
 $monospace-font-family: 'FiraCode', Courier, monospace;
@@ -39,19 +57,6 @@ $small-spacing: $base-spacing / 4;
 $base-z-index: 0;
 
 
-// Other Colors.
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #ddd;
-
-$primary-color: #555;
-$link-color: black;
-
-
-// Font Colors.
-$base-font-color: $dark-gray;
-$action-color: black;
-$accent-color: $mozilla-blue;
 
 // Border.
 $base-border-color: black;
