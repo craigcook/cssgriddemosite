@@ -4,6 +4,10 @@
 * {
   box-sizing: border-box;
 }
+@font-face{ 
+	font-family: 'FiraCode';
+	src: url('../fonts/FiraCode-Regular.woff2') format('woff2');
+}
 
 @import "typography";
 @import "base";
