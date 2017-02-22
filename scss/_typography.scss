@@ -1,0 +1,128 @@
+// Typographic styles.
+html {
+  font-size: 100%;
+}
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  line-height: $heading-line-height;
+  margin: 1em 0 $small-spacing;
+  color: black;
+
+}
+h1 {
+  font-size: 3rem;
+  font-weight: $headline-font-weight;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: $headline-font-weight;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: $headline-font-weight;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 200;
+  background: black;
+  color: white;
+  margin: 0;
+  padding: 0 0.5rem;
+  a {
+    color: white;
+  }
+}
+
+h5 {
+  font-size: 1.2rem;
+  font-weight: 200;
+  background: $mozilla-yellow;
+  margin: 0;
+  padding: 0.2rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 200;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 $small-spacing;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: shade($action-color, 25%);
+  }
+}
+
+ul {
+  margin: 0.25rem 0;  
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+// Code.
+pre, code, tt {
+  font: 0.9em courier, monospace;
+  line-height: 1.2;
+  color: black;
+}
+code { // inline
+  padding: 0 0.25rem;
+  background: $mozilla-neon-blue-light;
+}
+pre code {
+  background: none;
+  padding: 0;
+}
+pre {
+  display: block;
+  background-color: #f9fcfc; // extremely pale & desaturated cyan
+  padding: 1.1em 1em 0.95em;
+  border: 1px solid #d0dddd;
+  box-shadow: 0px 0px 2px rgba(0,0,0,0.2) inset;
+}
+
+figure {
+  margin: 1rem 0;
+}
+figcaption {
+  font-style: italic;
+}
+
+// Abbreviation.
+abbr {
+  border-bottom: 1px dotted #666666;
+  cursor: help;
+  white-space: nowrap;
+}

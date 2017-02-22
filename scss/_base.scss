@@ -1,0 +1,19 @@
+main {
+  a {
+    color: $link-color;
+    border-bottom: 1px solid lighten($link-color, 45%);
+    transition: background .15s cubic-bezier(.33, .66, .66, 1);
+    text-decoration-skip: ink;
+  }
+  a:link {
+  
+  }
+  a:hover {
+    background: lighten($mozilla-yellow, 10%);
+    color: black;
+    border-bottom: none;
+  }
+  a:visited {
+  
+  }
+}

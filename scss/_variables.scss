@@ -1,0 +1,70 @@
+// Variables
+// -----------
+
+//Mozilla Brand Colors.
+$mozilla-blue: #82D1F5; // As of Feb 2017, this color is named "Cyan" in the Mozilla branding guidelines. But it's NOT cyan. So I renamed it. 
+$mozilla-coral: #FF8C8E;
+$mozilla-yellow: #FFED00;
+$mozilla-lilac: #B0B2E9;
+$mozilla-orange: #FABA00;
+$mozilla-lime: #B6D806;
+$mozilla-neon-blue: #00FFFF; // This is actually cyan. Which makes Mozilla's names confusing.
+$mozilla-neon-blue-light: lighten($mozilla-neon-blue, 40%); // I made this up
+$mozilla-neon-pink: #FA8CFF;
+$mozilla-neon-green: #ABFF10;
+
+// Fonts.
+$base-font-family: 'DIN Next W01', 'Helevetica Neue', Helvetica, sans-serif;
+$body-font-family: 'Calluna W01', Georgia, Serif;
+$heading-font-family: 'Sanchez Slab W03';   // This will be replaced with Zilla, once the web font files are available.
+$action-font-family: 'Sanchez Slab W03';    // This will be replaced with Zilla, once the web font files are available.
+$alternative-font-family: 'Avenir Next W01', 'Helevetica Neue', Helvetica, sans-serif;
+
+// Font Sizes.
+$base-font-size: 1rem;
+$body-font-size: 1.1rem;
+$action-font-size: 1.4rem;
+
+// Line Heights.
+$base-line-height: 1.5;
+$heading-line-height: 1.3;
+
+// Font Weights.
+$headline-font-weight: 200;
+
+// Other Sizes.
+$base-border-radius: 0;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 4;
+$base-z-index: 0;
+
+
+// Other Colors.
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+
+$primary-color: #555;
+$link-color: black;
+
+
+// Font Colors.
+$base-font-color: $dark-gray;
+$action-color: black;
+$accent-color: $mozilla-blue;
+
+// Border.
+$base-border-color: black;
+$base-border: 7px solid $base-border-color;
+
+// Background Colors.
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Forms.
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations.
+$base-duration: 150ms;
+$base-timing: ease;
