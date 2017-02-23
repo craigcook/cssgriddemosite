@@ -1,19 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 main {
   a {
     color: $link-color;
     border-bottom: 1px solid lighten($link-color, 45%);
-    transition: background .15s cubic-bezier(.33, .66, .66, 1);
+    transition: background 0.15s cubic-bezier(0.33, 0.66, 0.66, 1);
     text-decoration-skip: ink;
   }
+
   a:link {
-  
+
   }
+
   a:hover {
     background: lighten($mozilla-yellow, 10%);
-    color: black;
-    border-bottom: none;
+    color: $link-color;
+    border-bottom: 0;
   }
+
   a:visited {
-  
+
   }
 }

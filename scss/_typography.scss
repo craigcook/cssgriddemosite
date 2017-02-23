@@ -1,13 +1,21 @@
+// Imported fonts
+@font-face{ 
+  font-family: 'FiraCode';
+  src: url('../fonts/FiraCode-Regular.woff2') format('woff2');
+}
+
 // Typographic styles.
 html {
   font-size: 100%;
 }
+
 body {
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
 }
+
 h1,
 h2,
 h3,
@@ -16,9 +24,9 @@ h5,
 h6 {
   font-family: $heading-font-family;
   line-height: $heading-line-height;
-  color: black;
-
+  color: $black;
 }
+
 h1 {
   font-size: 3rem;
   font-weight: $headline-font-weight;
@@ -40,12 +48,13 @@ h3 {
 h4 {
   font-size: 1.8rem;
   font-weight: 200;
-  background: black;
-  color: white;
+  background: $black;
+  color: $white;
   margin: 0;
   padding: 0.2em 0.5em 0;
+
   a {
-    color: white;
+    color: $white;
   }
 }
 
@@ -65,12 +74,13 @@ h6 {
 
 p {
   margin: 1em 0;
-} 
+}
 
 a {
   color: $action-color;
   text-decoration: none;
   transition: color $base-duration $base-timing;
+
   &:active,
   &:focus,
   &:hover {
@@ -79,7 +89,7 @@ a {
 }
 
 ul {
-  margin: 0.25rem 0;  
+  margin: 0.25rem 0;
 }
 
 hr {
@@ -91,28 +101,33 @@ hr {
 }
 
 // Code.
-pre, code, tt {
+pre,
+code,
+tt {
   font: 0.9rem $monospace-font-family;
   line-height: 1.4;
   color: $dark-gray;
 }
-code { // inline
+
+code {
   padding: 0 0.25rem;
   background: $mozilla-neon-blue-light;
 }
+
 pre code {
   background: none;
   padding: 0;
 }
+
 pre {
   display: block;
-  padding: 1.5em 2em 1.1em;  
+  padding: 1.5em 2em 1.1em;
   background: linear-gradient(
     to bottom,
-    #F0FCBC,
-    #F0FCBC 50%,
-    #EEF7BA 50%,
-    #EEF7BA
+    #f0fcbc,
+    #f0fcbc 50%,
+    #eef7ba 50%,
+    #eef7ba
   );
   background-size: 100% 40px;
 }
@@ -120,13 +135,14 @@ pre {
 figure {
   margin: 1rem 0;
 }
+
 figcaption {
   font-style: italic;
 }
 
 // Abbreviation.
 abbr {
-  border-bottom: 1px dotted #666666;
+  border-bottom: 1px dotted #666;
   cursor: help;
   white-space: nowrap;
 }
