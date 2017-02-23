@@ -1,129 +1,134 @@
 <!doctype html>
-<html lang="en-us" dir="ltr">
+<html lang="en-us">
   <head>
     <meta charset="utf-8">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
-    <link rel="shortcut icon" href="images/favicon.svg" type="image/svg">
     <title>Mozilla presents CSS Grid</title>
+    <meta name="description" content="CSS Grid is a new layout model for CSS that allows us to create layouts that were previously not possible on the web.">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/favicons/manifest.json">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#82d1f5">
+    <meta name="theme-color" content="#ffffff">
+    
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/layout.css">
     <script type="text/javascript" src="//fast.fonts.net/jsapi/a9d60a44-726c-45a7-bcbf-f7b6530463b8.js"></script>
   </head>
+
   <body>
     <header>
-      <img src="images/logo.svg" alt="" /> 
+      <img src="images/logo.svg" alt="Mozilla" /> 
       <h1><span>Mozilla </span>on CSS Grid</h1>
     </header>
+
     <main>
 
-    <section class="intro">
-      <h1>CSS Grid</h1>
-      <p>CSS Grid is a new toolset built directly into web browsers. Grid makes it possible to do innovative page layouts using CSS, without needing heavy frameworks. Grid is a layout framework.</p>
-       
-      <h2>CSS Grid shipped in Firefox 52, on March 7, 2017.</h2>
-      
-      <p>It's coming soon to Chrome 57, on March 14. And to Safari 10.1, in late March or early April.</p>
-      
-      <img src="tempart.jpg" alt="" /> 
+      <section class="intro">
+        <h1>CSS Grid</h1>
+        <p>CSS Grid is a new toolset built directly into web browsers. Grid makes it possible to do innovative page layouts using CSS, without needing heavy frameworks. Grid is a layout framework.</p>
 
-      <p>CSS Grid makes it easy to code the layouts we see most. And it makes it possible to // bringing the power and tradition of graphic design to the web. Intro, intro. Fancy, fancy.</p>
-      
-      <p>This is not Bootstrap. This is not HTML Tables done in CSS. Don't assume you know what this is. You've never seen anything like it before. Let's take a look, together.</p>
-      
-      
-    </section>
-    
+        <h2>CSS Grid shipped in Firefox 52, on March 7, 2017.</h2>
+
+        <p>It's coming soon to Chrome 57, on March 14. And to Safari 10.1, in late March or early April.</p>
+
+        <img src="tempart.jpg" alt="" /> 
+
+        <p>CSS Grid makes it easy to code the layouts we see most. And it makes it possible to // bringing the power and tradition of graphic design to the web. Intro, intro. Fancy, fancy.</p>
+
+        <p>This is not Bootstrap. This is not HTML Tables done in CSS. Don't assume you know what this is. You've never seen anything like it before. Let's take a look, together.</p>
+      </section>
+
+      <section class="temp">
+        <h4>layout</h4>
+        <h4>inspect</h4>
+        <h4>design</h4>
+        <h4>enjoy</h4>
+      </section>
+
+      <section class="example1">
+        <h2>Example 1</h2>
+        <article class="example-wrapper">
+          <ul class="gallery">
+            <li><img src="examples/gallery/436667.jpg" alt=""></li>
+            <li><img src="examples/gallery/380485.jpg" alt=""></li>
+            <li><img src="examples/gallery/437332.jpg" alt=""></li>
+            <li><img src="examples/gallery/brooklynmuseum-o170i000-98.14_SL1.jpg" alt=""></li>
+            <li><img src="examples/gallery/brooklynmuseum-o397i000-32.10_SL1.jpg" alt=""></li>
+            <li><img src="examples/gallery/brooklynmuseum-o495i000-40.59a-b_SL1.jpg" alt=""></li>
+            <li><img src="examples/gallery/brooklynmuseum-o755i000-44.65_SL1.jpg" alt=""></li>
+            <li><img src="examples/gallery/443197.jpg" alt=""></li>
+            <li><img src="examples/gallery/brooklynmuseum-o1085i000-52.166.5.jpg" alt=""></li>
+            <li><img src="examples/gallery/brooklynmuseum-o2310i000-1995.29.14_SL1.jpg" alt=""></li>
+            <li><img src="examples/gallery/brooklynmuseum-o73318i000-57.91.3_open_PS2.jpg" alt=""></li>
+            <li><img src="examples/gallery/brooklynmuseum-o76375i000-59.205.3_IMLS_SL2.jpg" alt=""></li>
+            <li><img src="examples/gallery/brooklynmuseum-o69856i000-55.43_SL1.jpg" alt=""></li>
+            <li><img src="examples/gallery/brooklynmuseum-o49886i000-39.581_SL1.jpg" alt=""></li>
+            <li><img src="examples/gallery/brooklynmuseum-o2827i000-52.166.4_SL1.jpg" alt=""></li>
+            <li><img src="examples/gallery/brooklynmuseum-o4266i000-86.226.18_SL1.jpg" alt=""></li>
+            <li><img src="examples/gallery/brooklynmuseum-o44489i000-35.867_reference_SL1.jpg" alt=""></li>
+            <li><img src="examples/gallery/84186.jpg" alt=""></li>
+            <li><img src="examples/gallery/brooklynmuseum-o23595i000-24.435.1_IMLS_SL2.jpg" alt=""></li>
+          </ul>
+        </article>  
         
-    <section class="temp">
-      <h4>layout</h4>
-      <h4>inspect</h4>
-      <h4>design</h4>
-      <h4>enjoy</h4>
-    </section>
-
-
-    <section class="example1">
-      <h2>Example 1</h2>
-      <article class="example-wrapper">
-        <ul class="gallery">
-          <li><img src="examples/gallery/436667.jpg" alt=""></li>
-          <li><img src="examples/gallery/380485.jpg" alt=""></li>
-          <li><img src="examples/gallery/437332.jpg" alt=""></li>
-          <li><img src="examples/gallery/brooklynmuseum-o170i000-98.14_SL1.jpg" alt=""></li>
-          <li><img src="examples/gallery/brooklynmuseum-o397i000-32.10_SL1.jpg" alt=""></li>
-          <li><img src="examples/gallery/brooklynmuseum-o495i000-40.59a-b_SL1.jpg" alt=""></li>
-          <li><img src="examples/gallery/brooklynmuseum-o755i000-44.65_SL1.jpg" alt=""></li>
-          <li><img src="examples/gallery/443197.jpg" alt=""></li>
-          <li><img src="examples/gallery/brooklynmuseum-o1085i000-52.166.5.jpg" alt=""></li>
-          <li><img src="examples/gallery/brooklynmuseum-o2310i000-1995.29.14_SL1.jpg" alt=""></li>
-          <li><img src="examples/gallery/brooklynmuseum-o73318i000-57.91.3_open_PS2.jpg" alt=""></li>
-          <li><img src="examples/gallery/brooklynmuseum-o76375i000-59.205.3_IMLS_SL2.jpg" alt=""></li>
-          <li><img src="examples/gallery/brooklynmuseum-o69856i000-55.43_SL1.jpg" alt=""></li>
-          <li><img src="examples/gallery/brooklynmuseum-o49886i000-39.581_SL1.jpg" alt=""></li>
-          <li><img src="examples/gallery/brooklynmuseum-o2827i000-52.166.4_SL1.jpg" alt=""></li>
-          <li><img src="examples/gallery/brooklynmuseum-o4266i000-86.226.18_SL1.jpg" alt=""></li>
-          <li><img src="examples/gallery/brooklynmuseum-o44489i000-35.867_reference_SL1.jpg" alt=""></li>
-          <li><img src="examples/gallery/84186.jpg" alt=""></li>
-          <li><img src="examples/gallery/brooklynmuseum-o23595i000-24.435.1_IMLS_SL2.jpg" alt=""></li>
-        </ul>
-      </article>  
-      
-      <div>
-      <p>Here's the heart of the code running this example. The images are part of an HTML list.</p>
-      <pre><code>&lt;ul class="gallery"&gt;
+        <div>
+          <p>Here's the heart of the code running this example. The images are part of an HTML list.</p>
+          <pre><code>&lt;ul class="gallery"&gt;
   &lt;li&gt;&lt;img src="image1.jpg"&gt;&lt;/li&gt;
   &lt;li&gt;&lt;img src="image2.jpg"&gt;&lt;/li&gt;
   &lt;li&gt;&lt;img src="image3.jpg"&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-      
-      <p>The layout is accomplished with incredibly simple CSS. Three lines total accomplish the entire layout.</p>
-      
-      <pre><code>ul.gallery {
+        
+          <p>The layout is accomplished with incredibly simple CSS. Three lines total accomplish the entire layout.</p>
+        
+          <pre><code>ul.gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 1rem;
-}</code></pre>      
-            
-      <p>How is this possible? CSS Grid automatically places all of the direct children of a grid container, putting each one in the next cell on the grid. It takes the first list item and puts it in the first box. Then it takes the second item and puts it in the second box. Magic. This is called the Grid Autoplacement Algorithm. It makes coding the layouts we've been designing for years much easier.</p>
-      
-      <p>Let's take a deeper look at the code, by using Firefox's Grid Inspector tool to see what's going on.</p>
-            
-      <ol><li>[screenshot] Right-click on part of the example to open the Developer Tools.</li>
-        <li>[screenshot] You can see the HTML markup on the left, and the CSS on the right. Now click on <code>&lt;ul class="gallery"&gt;</code> to see the CSS that has been applied to the grid container.</li>
-        <li>[screenshot] Find where it says <code>display: grid;</code>, and click on the tiny hash icon next to the word grid.</li>
-        <li>[screenshot] That turns on our Grid Inspector tool, letting you see the lines for of the grid.</li>
-        <li> Now play around. You can redefine the grid. Try changing the <code>minmax</code> value from <code>(100, 1fr)</code> to <code>(200, 1fr)</code> and see what happens. Change the <code>repeat</code> value to a number, resize the browser window, and see what's different. Change the value of the <code>grid-gap</code>. You can mess with the design right here in the browser, experimenting and learning about the new possibilities.</li></ol>
-       
-       <p>[Do we also want a video showing exactly the same thing?]</p>
-            
-    </section>
+}</code></pre>
 
-    <section>
-      <h3>Next example</h3>
-    </section> 
+          <p>How is this possible? CSS Grid automatically places all of the direct children of a grid container, putting each one in the next cell on the grid. It takes the first list item and puts it in the first box. Then it takes the second item and puts it in the second box. Magic. This is called the Grid Autoplacement Algorithm. It makes coding the layouts we've been designing for years much easier.</p>
 
+          <p>Let's take a deeper look at the code, by using Firefox's Grid Inspector tool to see what's going on.</p>
 
-    <section class="resources">
-      <h3>Resources</h3>
-      <ul>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">Basic Concepts of Grid Layout</a></li>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts">How to Examine Grid Layouts</a></li>
+          <ol>
+            <li>[screenshot] Right-click on part of the example to open the Developer Tools.</li>
+            <li>[screenshot] You can see the HTML markup on the left, and the CSS on the right. Now click on <code>&lt;ul class="gallery"&gt;</code> to see the CSS that has been applied to the grid container.</li>
+            <li>[screenshot] Find where it says <code>display: grid;</code>, and click on the tiny hash icon next to the word grid.</li>
+            <li>[screenshot] That turns on our Grid Inspector tool, letting you see the lines for of the grid.</li>
+            <li>Now play around. You can redefine the grid. Try changing the <code>minmax</code> value from <code>(100, 1fr)</code> to <code>(200, 1fr)</code> and see what happens. Change the <code>repeat</code> value to a number, resize the browser window, and see what's different. Change the value of the <code>grid-gap</code>. You can mess with the design right here in the browser, experimenting and learning about the new possibilities.</li>
+          </ol>
+         
+          <p>[Do we also want a video showing exactly the same thing?]</p>
+        </div>
 
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-      </ul>
-    </section>
+      </section>
+
+      <section>
+        <h3>Next example</h3>
+      </section> 
+
+      <section class="resources">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">Basic Concepts of Grid Layout</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts">How to Examine Grid Layouts</a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+        </ul>
+      </section>
     
-    <section class="conclusion">
-      <p>Wrap up. Want to see the most complex example of them all? Well, this whole page has been laid out using a series of grid containers. You can inspect this website. In fact, to make it easier to see where the Grids are, <a href="">click this</a>.</p>
-      Let's make it so that there's a translucent no-show blue overlay hovering over every grid container, with the element/class listed (the thing they need to look at to find the display:grid property to turn the grid on.) Or overlay the parts of the page that are not a grid (well, is there any such thing?), and cover that with transparent orange (like rubylith). 
-    </section>  
-    
-   </main>
+      <section class="conclusion">
+        <p>Wrap up. Want to see the most complex example of them all? Well, this whole page has been laid out using a series of grid containers. You can inspect this website. In fact, to make it easier to see where the Grids are, <a href="">click this</a>.</p>
+
+        <p>Let's make it so that there's a translucent no-show blue overlay hovering over every grid container, with the element/class listed (the thing they need to look at to find the display:grid property to turn the grid on.) Or overlay the parts of the page that are not a grid (well, is there any such thing?), and cover that with transparent orange (like rubylith).</p>
+      </section>  
+
+    </main>
 
   </body>
 </html>

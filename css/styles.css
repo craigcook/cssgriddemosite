@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 @font-face {
   font-family: 'FiraCode';
@@ -98,6 +99,7 @@ pre code {
 pre {
   display: block;
   padding: 1.5em 2em 1.1em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F0FCBC), color-stop(50%, #F0FCBC), color-stop(50%, #EEF7BA), color-stop(50%, #EEF7BA));
   background: -webkit-linear-gradient(top, #F0FCBC, #F0FCBC 50%, #EEF7BA 50%, #EEF7BA);
   background: linear-gradient(to bottom, #F0FCBC, #F0FCBC 50%, #EEF7BA 50%, #EEF7BA);
   background-size: 100% 40px; }
@@ -153,7 +155,8 @@ section {
     display: block;
     padding: 2rem;
     background: #f6f3ea;
-    box-shadow: 3px 2px 12px rgba(0, 0, 0, 0.4); } }
+    -webkit-box-shadow: 3px 2px 12px rgba(0, 0, 0, 0.4);
+            box-shadow: 3px 2px 12px rgba(0, 0, 0, 0.4); } }
 
 .example1 {
   background: #82D1F5; }
@@ -204,4 +207,3 @@ section.resources ul a {
 .example1 img {
   display: block;
   width: 100%; }
-/*# sourceMappingURL=styles.css.map */
