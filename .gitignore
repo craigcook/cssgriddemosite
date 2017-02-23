@@ -48,9 +48,10 @@ Thumbs.db
 ########################
 README.html
 
-# Node-related files #
-######################
+# Local dev files #
+###################
 node_modules
 package.json
 yarn.lock
 gulpfile.js
+.scss-lint.yml
