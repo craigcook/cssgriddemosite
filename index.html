@@ -27,7 +27,7 @@
       
       <p>It's coming soon to Chrome 57, on March 14. And to Safari 10.1, in late March or early April.</p>
       
-      <p>CSS Grid makes it easy to code the layouts we see most. And it makes it possible to / bringing the power and traditiona of graphic design to the web.</p>
+      <p>CSS Grid makes it easy to code the layouts we see most. And it makes it possible to // bringing the power and tradition of graphic design to the web. Intro, intro. Fancy, fancy.</p>
       
       <p>This is not Bootstrap. This is not HTML Tables done in CSS. Don't assume you know what this is. You've never seen anything like it before. Let's take a look, together.</p>
       
@@ -69,25 +69,37 @@
       </article>  
       
       <div>
-      Here's the heart of the code running this example. The images are part of an HTML list, like this: 
+      <p>Here's the heart of the code running this example. The images are part of an HTML list.</p>
       <pre><code>&lt;ul class="gallery"&gt;
   &lt;li&gt;&lt;img src="image1.jpg"&gt;&lt;/li&gt;
   &lt;li&gt;&lt;img src="image2.jpg"&gt;&lt;/li&gt;
   &lt;li&gt;&lt;img src="image3.jpg"&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
+      
+      <p>The layout is accomplished with incredibly simple CSS. Three lines total accomplish the entire layout.</p>
+      
+      <pre><code>ul.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 1rem;
+}</code></pre>      
             
-      <p>This relies on the Grid autoplacement...</p>
+      <p>How is this possible? CSS Grid automatically places all of the direct children of a grid container, putting each one in the next cell on the grid. It takes the first list item and puts it in the first box. Then it takes the second item and puts it in the second box. Magic. This is called the Grid Autoplacement Algorithm. It makes coding the layouts we've been designing for years much easier.</p>
       
-      <p>[Explain how to use the Grid Inspector. Screenshots. Maybe with a video.]</p>
+      <p>Let's take a deeper look at the code, by using Firefox's Grid Inspector tool to see what's going on.</p>
             
-      <p>Change the <code>minmax</code> value from <code>(100, 1fr)</code> to <code>(250, 1fr)</code> and see what happens.</p>
-      
-      <p>[Maybe video showing how. Or screenshots, showing where to edit, and result.]</p>
-      
+      <ol><li>[screenshot] Right-click on part of the example to open the Developer Tools.</li>
+        <li>[screenshot] You can see the HTML markup on the left, and the CSS on the right. Now click on <code>&lt;ul class="gallery"&gt;</code> to see the CSS that has been applied to the grid container.</li>
+        <li>[screenshot] Find where it says <code>display: grid;</code>, and click on the tiny hash icon next to the word grid.</li>
+        <li>[screenshot] That turns on our Grid Inspector tool, letting you see the lines for of the grid.</li>
+        <li> Now play around. You can redefine the grid. Try changing the <code>minmax</code> value from <code>(100, 1fr)</code> to <code>(200, 1fr)</code> and see what happens. Change the <code>repeat</code> value to a number, resize the browser window, and see what's different. Change the value of the <code>grid-gap</code>. You can mess with the design right here in the browser, experimenting and learning about the new possibilities.</li></ol>
+       
+       <p>[Do we also want a video showing exactly the same thing?]</p>
+            
     </section>
 
     <section>
-      <h3>Another example</h3>
+      <h3>Next example</h3>
     </section> 
 
 

@@ -195,11 +195,11 @@ section.resources ul a {
 .example1 ul {
   /* autoprefixer: off */
   list-style: none;
-  display: grid;
   margin: 0;
   padding: 0;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  grid-gap: 4px; }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 1rem; }
 
 .example1 img {
   display: block;
