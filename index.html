@@ -76,6 +76,7 @@
         
         <div>
           <p>Here's the heart of the code running this example. The images are part of an HTML list.</p>
+
           <pre><code>&lt;ul class="gallery"&gt;
   &lt;li&gt;&lt;img src="image1.jpg"&gt;&lt;/li&gt;
   &lt;li&gt;&lt;img src="image2.jpg"&gt;&lt;/li&gt;
@@ -90,7 +91,9 @@
   grid-gap: 1rem;
 }</code></pre>
 
-          <p>How is this possible? CSS Grid automatically places all of the direct children of a grid container, putting each one in the next cell on the grid. It takes the first list item and puts it in the first box. Then it takes the second item and puts it in the second box. Magic. This is called the Grid Autoplacement Algorithm. It makes coding the layouts we've been designing for years much easier.</p>
+          <p>How is this possible? CSS Grid automatically places all of the direct children of a grid container, putting each one in the next cell on the grid. It takes the first list item and puts it in the first box. Then it takes the second item and puts it in the second box. Magic. This is called the Grid Auto-placement Algorithm. It makes coding the layouts we've been designing for years much easier.</p>
+
+          <p>And it's also responsive right out the box. You don't even need additional media queries to change the number of columns as the screen size changes. Just resize the window and see for yourself. The grid items will also automatically fill up the available space in the container. No complicated calculations required. Life changing.</p>
 
           <p>Let's take a deeper look at the code, by using Firefox's Grid Inspector tool to see what's going on.</p>
 
@@ -128,8 +131,8 @@
         <ul>
           <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">Basic Concepts of Grid Layout</a></li>
           <li><a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts">How to Examine Grid Layouts</a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
+          <li><a href="http://gridbyexample.com/">Grid by Example</a></li>
+          <li><a href="https://blogs.igalia.com/mrego/2016/02/01/deep-dive-into-grid-layout-placement/">Deep Dive into Grid Layout Placement</a></li>
           <li><a href=""></a></li>
         </ul>
       </section>
