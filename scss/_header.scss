@@ -1,14 +1,15 @@
-
 header {
   font-family: $heading-font-family;
   font-size: 2.5rem;
   line-height: 1.3em;
   font-weight: $headline-font-weight;
+
   h1 span {
     @include element-invisible;
   }
+
   h1 {
-    color: black;
+    color: $black;
     background: $mozilla-yellow;
     display: inline-block;
     min-width: 400px;
@@ -17,6 +18,7 @@ header {
     padding-left: 0.5rem;
     text-transform: lowercase;
   }
+
   img {
     max-width: 200px;
     display: block;

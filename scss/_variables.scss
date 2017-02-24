@@ -1,35 +1,35 @@
 // Variables
 // -----------
-
 //Mozilla Brand Colors.
-$mozilla-blue: #82D1F5; // As of Feb 2017, this color is named "Cyan" in the Mozilla branding guidelines. But it's NOT cyan. So I renamed it. 
-$mozilla-coral: #FF8C8E;
-$mozilla-yellow: #FFED00;
-$mozilla-lilac: #B0B2E9;
-$mozilla-orange: #FABA00;
-$mozilla-lime: #B6D806;
-$mozilla-neon-blue: #00FFFF; // This is actually cyan. Which makes Mozilla's names confusing.
+$mozilla-blue: #82d1f5; // As of Feb 2017, this color is named "Cyan" in the Mozilla branding guidelines. But it's NOT cyan. So I renamed it.
+$mozilla-coral: #ff8c8e;
+$mozilla-yellow: #ffed00;
+$mozilla-lilac: #b0b2e9;
+$mozilla-orange: #faba00;
+$mozilla-lime: #b6d806;
+$mozilla-neon-blue: #0ff; // This is actually cyan. Which makes Mozilla's names confusing.
 $mozilla-neon-blue-light: lighten($mozilla-neon-blue, 40%); // I made this up
-$mozilla-neon-pink: #FA8CFF;
-$mozilla-neon-green: #ABFF10;
+$mozilla-neon-pink: #fa8cff;
+$mozilla-neon-green: #abff10;
 
 // Other Colors.
+$white: #fff;
 $old-paper: #f6f3ea;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
+$black: #000;
+$red: #f00;
 $primary-color: #555;
-$link-color: black;
+$link-color: #000;
 
 // Font Colors.
 $base-font-color: $dark-gray;
-$action-color: black;
+$action-color: $black;
 $accent-color: $mozilla-blue;
 
-
-
 // Some universal styles.
-$box-shadow: 3px 2px 12px rgba(0,0,0,0.4);
+$box-shadow: 3px 2px 12px rgba(0, 0, 0, 0.4);
 
 // Fonts.
 $base-font-family: 'DIN Next W01', 'Helevetica Neue', Helvetica, sans-serif;
@@ -56,10 +56,8 @@ $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 4;
 $base-z-index: 0;
 
-
-
 // Border.
-$base-border-color: black;
+$base-border-color: #000;
 $base-border: 7px solid $base-border-color;
 
 // Background Colors.

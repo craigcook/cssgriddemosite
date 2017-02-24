@@ -44,4 +44,14 @@ Thumbs.db
 .sass-cache
 *.map
 
+# Misc generated files #
+########################
 README.html
+
+# Local dev files #
+###################
+node_modules
+package.json
+yarn.lock
+gulpfile.js
+.scss-lint.yml

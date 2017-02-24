@@ -9,14 +9,13 @@
 // For complete documentation:
 // Sass mixins: http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#mixins
 
-
 @mixin element-invisible {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
   overflow: hidden;
   height: 1px;
   width: 1px;
-  word-wrap: normal;  
+  word-wrap: normal;
 }
 
 @mixin element-invisible-off {

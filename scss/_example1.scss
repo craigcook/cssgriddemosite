@@ -1,6 +1,5 @@
 // Example 1
 // --------
-
 .example1 {
   ul { /* autoprefixer: off */
     list-style: none;
@@ -10,8 +9,9 @@
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 1rem;
   }
+
   img {
     display: block;
     width: 100%;
-  } 
+  }
 }

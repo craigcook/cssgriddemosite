@@ -1,20 +1,12 @@
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
-* {
-  box-sizing: border-box;
-}
-@font-face{ 
-	font-family: 'FiraCode';
-	src: url('../fonts/FiraCode-Regular.woff2') format('woff2');
-}
+@import 'typography';
+@import 'base';
+@import 'page';
 
-@import "typography";
-@import "base";
-@import "page";
+@import 'header';
+@import 'section-temp';
+@import 'section-resources';
 
-@import "header";
-@import "section-temp";
-@import "section-resources";
-
-@import "example1.scss";
+@import 'example1';
