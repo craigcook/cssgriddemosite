@@ -223,3 +223,16 @@ section.resources ul a {
 .example1 img {
   display: block;
   width: 100%; }
+
+.example2 ul {
+  /* autoprefixer: off */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 1rem; }
+
+.example2 img {
+  display: block;
+  width: 100%; }
