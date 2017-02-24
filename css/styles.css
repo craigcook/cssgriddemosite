@@ -230,9 +230,39 @@ section.resources ul a {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
   grid-gap: 1rem; }
 
 .example2 img {
   display: block;
   width: 100%; }
+
+.example2 li:nth-child(1) {
+  -ms-grid-column: 3;
+      grid-column: 3;
+  -ms-grid-row: 1;
+      grid-row: 1; }
+
+.example2 li:nth-child(2) {
+  -ms-grid-column: 5;
+      grid-column: 5;
+  -ms-grid-row: 2;
+      grid-row: 2; }
+
+.example2 li:nth-child(3) {
+  -ms-grid-column: 3;
+      grid-column: 3;
+  -ms-grid-row: 2;
+      grid-row: 2; }
+
+.example2 li:nth-child(4) {
+  -ms-grid-column: 4;
+      grid-column: 4;
+  -ms-grid-row: 3;
+      grid-row: 3; }
+
+.example2 li:nth-child(5) {
+  -ms-grid-column: 1;
+      grid-column: 1;
+  -ms-grid-row: 3;
+      grid-row: 3; }
